@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends List</title>
+    <style>
+        /* Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            width: 60%;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: white;
+        }
+
+        .friend-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .friend {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            backdrop-filter: blur(5px);
+        }
+
+        .friend img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-right: 15px;
+        }
+
+        .friend span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Friends List 🎉</h1>
+        <div class="friend-list">
+            <h2>👥 Your Friends</h2>
+            <div class="friend">
+                <img src="alice.jpg" alt="Alice">
+                <span>Alice</span>
+            </div>
+            <div class="friend">
+                <img src="bob.jpg" alt="Bob">
+                <span>Bob</span>
+            </div>
+            <div class="friend">
+                <img src="charlie.jpg" alt="Charlie">
+                <span>Charlie</span>
+            </div>
+            <div class="friend">
+                <img src="david.jpg" alt="David">
+                <span>David</span>
+            </div>
+            <div class="friend">
+                <img src="emily.jpg" alt="Emily">
+                <span>Emily</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

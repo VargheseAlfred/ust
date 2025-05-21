@@ -1,0 +1,19 @@
+HADOOP COMMANDS 
+
+hadoop fs -ls /path : Lists files in a directory.
+
+hadoop fs -mkdir /path : Creates a new directory in HDFS.
+
+hadoop fs -rmdir /path : Removes an empty directory.
+
+hadoop fs -rm -r /path : Deletes a directory with files.
+
+hadoop fs -put localfile /hdfs/path : Uploads a file to HDFS.
+
+hadoop fs -copyFromLocal localfile /hdfs/path : Copies a local file to HDFS.
+
+hdfs fsck /   : This checks the health of the entire HDFS file system.
+
+hadoop fs -cat /hdfs/path/file.txt : This command prints the contents of file.txt stored in HDFS.
+
+hadoop fs -setrep 3 /hdfs/path/file.txt : This command sets the replication factor of file.txt to 3.

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Gift</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin: auto;
+        }
+
+        h1 {
+            color: #ff3399;
+        }
+
+        .gift-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .gift {
+            background-color: #fff3f3;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #ff3399;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #cc0077;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎁 Select Your Gift! 🎉</h1>
+        <div class="gift-list" id="giftContainer">
+            <h2>🎈 Available Gifts</h2>
+        </div>
+    </div>
+
+    <script>
+        // Sample list of gifts
+        let gifts = ["🎂 Birthday Cake", "📖 Book", "🧸 Teddy Bear", "🎮 Gaming Console", "💐 Flower Bouquet"];
+
+        // Display gifts dynamically
+        let container = document.getElementById("giftContainer");
+        gifts.forEach(gift => {
+            let giftDiv = document.createElement("div");
+            giftDiv.className = "gift";
+            giftDiv.innerText = gift;
+            let button = document.createElement("button");
+            button.innerText = "Select";
+            button.onclick = () => alert("You selected: " + gift);
+            giftDiv.appendChild(button);
+            container.appendChild(giftDiv);
+        });
+    </script>
+</body>
+</html>

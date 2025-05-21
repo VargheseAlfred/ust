@@ -1,0 +1,437 @@
+n-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_60135cd0-79d6-432b-a810-5438c9ce447b_823933008.txt
+hive> load data local inpath '/user/clouder/ust/custs.txt' into table customer;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/clouder/ust/custs.txt'': No files matching path file:/user/clouder/ust/custs.txt
+hive> load data local inpath '/user/cloudera/ust/custs.txt' into table customer;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/custs.txt'': No files matching path file:/user/cloudera/ust/custs.txt
+hive> load data local inpath '/user/cloudera/ust/custs.txt' into table customer;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/custs.txt'': No files matching path file:/user/cloudera/ust/custs.txt
+hive> create table customer(custno STRING,firstname STRING,lastname STRING,age INT,profession STRING)row format delimited fields terminated by ',';
+FAILED: Error in metadata: AlreadyExistsException(message:Table customer already exists)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+hive> create table customer(custno STRING,firstname STRING,lastname STRING,age INT,profession STRING)row format delimited fields ter                                                                                                                                    load data local inpath '/user/cloudera/ust/custs.txt' into table customer;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/custs.txt'': No files matching path file:/user/cloudera/ust/custs.txt
+hive> load data local inpath '/user/cloudera/custs.txt' into table customer;    
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/custs.txt'': No files matching path file:/user/cloudera/custs.txt
+hive> load data local inpath '/user/cloudera/ust/custs.txt' into table customer;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/custs.txt'': No files matching path file:/user/cloudera/ust/custs.txt
+hive> load data local inpath /user/cloudera/ust/custs.txt into table customer;  
+FAILED: ParseException line 1:23 mismatched input '/' expecting StringLiteral near 'inpath' in load statement
+
+hive> [cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/partition.txt' /user/cloudera/ust
+[cloudera@localhost ~]$ hive
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_3d8d7216-7748-48c5-9ede-5f57c1db8b51_1834787799.txt
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',';
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> show databases;                                                                                                              
+OK
+default
+Time taken: 2.451 seconds
+hive> use ust;
+FAILED: Error in metadata: ERROR: The database ust does not exist.
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',';
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> create database ust;
+OK
+Time taken: 0.096 seconds
+hive> use database ust;
+FAILED: ParseException line 1:4 extraneous input 'database' expecting Identifier near '<EOF>'
+
+hive> use ust;         
+OK
+Time taken: 0.026 seconds
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',';
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' d[cloudera@localhost ~]$ hive                                                                                                 
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_e7c6ca30-1674-446a-aaf7-e8d966960019_1708654330.txt
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING cityrow format delimited fields terminated by ',' stimited fields terminated by ',' stored as textfile;                                                                                 create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' stored as textfile;
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' stored as textfile;
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> use ust;
+OK
+Time taken: 1.424 seconds
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' s stored as textfile;
+FAILED: ParseException line 1:22 extraneous input 'STRING' expecting Identifier near 'name' in column type
+
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' s                                                                                                                                    create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' stored create table customer(custno STRING,firstname STRING,lastname STRING,age INT,profession STRING)row format delimited fields terminate                                                                                                                                    create table customer(custno STRING,firstname STRING,lastname STRING,age INT,profession STRING)row format delimited fields terminate                                                                                                                                    LOAD DATA INPATH '/user/cloudera/txns.txt' OVERWRITE INTO TABLE txnrecords;[cloudera@localhost ~]$ 
+[cloudera@localhost ~]$ 
+[cloudera@localhost ~]$ 
+[cloudera@localhost ~]$ hive
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_0208116d-b983-4ea9-a46a-8c9a9c34fb8b_1083173133.txt
+hive> create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' s                                                                                                                                    create table employee(STRING name,STRING mail,INT mob,STRING state,STRING city)row format delimited fields terminated by ',' stored create table employee(name STRING,mail STRING,mob INT,state STRING,city STRING)row format delimited fields terminated by ',' stored as textfile;
+OK
+Time taken: 2.065 seconds
+hive> describe employee;
+OK
+name	string	
+mail	string	
+mob	int	
+state	string	
+city	string	
+Time taken: 0.996 seconds
+hive> LOAD DATA INPATH 'user/cloudera/ust/partition.txt' OVERWRITE INTO TABLE employee;
+FAILED: SemanticException Line 1:17 Invalid path ''user/cloudera/ust/partition.txt'': No files matching path hdfs://localhost.localdomain:8020/user/cloudera/user/cloudera/ust/partition.txt
+hive> LOAD DATA INPATH '/user/cloudera/ust/partition.txt' OVERWRITE INTO TABLE employee;
+Loading data to table default.employee
+chgrp: changing ownership of '/user/hive/warehouse/employee/partition.txt': User does not belong to hive
+Table default.employee stats: [num_partitions: 0, num_files: 1, num_rows: 0, total_size: 267, raw_data_size: 0]
+OK
+Time taken: 0.749 seconds
+hive> from employee ey insert overwrite table ny partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;
+FAILED: SemanticException [Error 10001]: Line 1:40 Table not found 'ny'
+hive> create table ny(STRING state,STRING city);
+FAILED: ParseException line 1:16 extraneous input 'STRING' expecting Identifier near 'state' in column type
+
+hive> create table ny(state STRING,city STRING);
+OK
+Time taken: 0.08 seconds
+hive> from employee ey insert overwrite table ny partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;
+FAILED: SemanticException [Error 10098]: Non-Partition column appears in the partition specification:  state
+hive> from employee ey insert overwrite table my partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city row format de                                                                                                                                    create table ny(STRING state,STRING city);[cloudera@localhost ~]$ 
+[cloudera@localhost ~]$ hive
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_8adb0a30-9ed4-4797-a6ee-6c7b38abb49e_1266727046.txt
+hive> create table ny(state STRING,city STRING) row format delimited fields terminated by ',' stored as textfile;      
+FAILED: Error in metadata: AlreadyExistsException(message:Table ny already exists)
+FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask
+hive> create table my(state STRING,city STRING) row format delimited fields terminated by ',' stored as textfile;
+OK
+Time taken: 0.064 seconds
+hive> from employee ey insert overwrite table my partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;
+FAILED: SemanticException [Error 10098]: Non-Partition column appears in the partition specification:  state
+hive> from employee ey insert overwrite table ky partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;
+FAILED: SemanticException [Error 10001]: Line 1:40 Table not found 'ky'
+hive> from employee ey insert overwrite table my partition(state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city; 
+FAILED: SemanticException [Error 10098]: Non-Partition column appears in the partition specification:  state
+hive> create table aaayyy(name STRING,mail STRING,mob INT) partitioned by (state STRING,city STRING) row format delimited fields terminated by ',';
+OK
+Time taken: 0.12 seconds
+hive> set hive.exec.dynamic.partition.mode=nonstrict;                                                                                              
+hive> set hive.exec.dynamic.partition=true;          
+hive> from employee ey insert overwrite table aaayyy partition(state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;                         
+Total MapReduce jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_202505062227_0001, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_202505062227_0001
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_202505062227_0001
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2025-05-07 01:17:34,952 Stage-1 map = 0%,  reduce = 0%
+2025-05-07 01:17:43,061 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.07 sec
+2025-05-07 01:17:44,096 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.07 sec
+2025-05-07 01:17:45,116 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.07 sec
+2025-05-07 01:17:46,148 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.07 sec
+2025-05-07 01:17:47,173 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.07 sec
+MapReduce Total cumulative CPU time: 1 seconds 70 msec
+Ended Job = job_202505062227_0001
+Ended Job = -26689798, job is filtered out (removed at runtime).
+Ended Job = -42419346, job is filtered out (removed at runtime).
+Moving data to: hdfs://localhost.localdomain:8020/tmp/hive-cloudera/hive_2025-05-07_01-17-19_612_7839113060898070846-1/-ext-10000
+Loading data to table default.aaayyy partition (state=null, city=null)
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Kerala%2527/city=%2527Kochi%2527': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Kerala%2527/city=%2527Kochi%2527': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%2527Gandhidham%2527': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%2527Gandhidham%2527': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Kerala%2527/city=%2527Pala%2527': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Kerala%2527/city=%2527Pala%2527': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%20%2527Gandhidham%2527': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%20%2527Gandhidham%2527': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%2527Ahmedabad%2527': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/aaayyy/state=%2527Gujarat%2527/city=%2527Ahmedabad%2527': Permission denied
+	Loading partition {state='Kerala', city='Kochi'}
+	Loading partition {state='Gujarat', city='Gandhidham'}
+	Loading partition {state='Kerala', city='Pala'}
+	Loading partition {state='Gujarat', city= 'Gandhidham'}
+	Loading partition {state='Gujarat', city='Ahmedabad'}
+Partition default.aaayyy{state='Gujarat', city= 'Gandhidham'} stats: [num_files: 1, num_rows: 0, total_size: 25, raw_data_size: 0]
+Partition default.aaayyy{state='Gujarat', city='Ahmedabad'} stats: [num_files: 1, num_rows: 0, total_size: 25, raw_data_size: 0]
+Partition default.aaayyy{state='Gujarat', city='Gandhidham'} stats: [num_files: 1, num_rows: 0, total_size: 25, raw_data_size: 0]
+Partition default.aaayyy{state='Kerala', city='Kochi'} stats: [num_files: 1, num_rows: 0, total_size: 25, raw_data_size: 0]
+Partition default.aaayyy{state='Kerala', city='Pala'} stats: [num_files: 1, num_rows: 0, total_size: 25, raw_data_size: 0]
+Table default.aaayyy stats: [num_partitions: 5, num_files: 5, num_rows: 0, total_size: 125, raw_data_size: 0]
+5 Rows loaded to aaayyy
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.07 sec   HDFS Read: 497 HDFS Write: 125 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 70 msec
+OK
+Time taken: 30.657 seconds
+hive> from employee ey insert overwrite table ny partition (state,city) select ey.name,ey.mail,ey.mob,ey.state,ey.city;[cloudera@localhost ~]$     
+[cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/sample_log_data.txt' /user/cloudera/ust
+put: `/home/cloudera/Desktop/sample_log_data.txt': No such file or directory
+[cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/sample_log_data.txt' /user/cloudera/ust
+put: `/home/cloudera/Desktop/sample_log_data.txt': No such file or directory
+[cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/custs.txt' /user/cloudera/ust;
+put: `/user/cloudera/ust/custs.txt': File exists
+[cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/sample_log_data.txt' /user/cloudera/ust;
+put: `/home/cloudera/Desktop/sample_log_data.txt': No such file or directory
+[cloudera@localhost ~]$ hadoop fs -put '/home/cloudera/Desktop/sample_log_data.txt' /user/cloudera/ust;
+[cloudera@localhost ~]$ hive
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_f5686b24-1014-49f1-9644-4e7a86e79766_263354088.txt
+hive> CREATE EXTERNAL TABLE IF NOT EXISTS logs(log_date STRING, log_level STRING, service_name STRING,message STRING)ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE;            
+OK
+Time taken: 1.972 seconds
+hive> load data local inpath '/user/cloudera/ust/custs.txt' into table customer;load data local inpath '/user/cloudera/ust/custs.txt' into table customer;load data local inpath '/user/cloudera/ust/custs.txt' into table customer;load data local inpath '/user/cloudera/ust/custs.txt' into table customer;[cloudera@localhost ~]$ hive
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-0.10.0-cdh4.4.0.jar!/hive-log4j.properties
+Hive history file=/tmp/cloudera/hive_job_log_3494f76c-898a-47f4-aa3e-b39b61ff2cce_2012646481.txt
+hive> load data local inpath '/user/cloudera/ust/sample_log_data.txt' into table logs;    
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/sample_log_data.txt'': No files matching path file:/user/cloudera/ust/sample_log_data.txt
+hive> load data local inpath '/user/cloudera/ust/sample log data.txt' into table logs;
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/sample log data.txt'': No files matching path file:/user/cloudera/ust/sample%20log%20data.txt
+load data local inpath '/user/cloudera/ust/sample_log_data.txt' into table logs;      
+FAILED: SemanticException Line 1:23 Invalid path ''/user/cloudera/ust/sample_log_data.txt'': No files matching path file:/user/cloudera/ust/sample_log_data.txt
+hive> load data inpath '/user/cloudera/ust/sample_log_data.txt' into table logs;      
+Loading data to table default.logs
+chgrp: changing ownership of '/user/hive/warehouse/logs/sample_log_data.txt': User does not belong to hive
+Table default.logs stats: [num_partitions: 0, num_files: 1, num_rows: 0, total_size: 6125, raw_data_size: 0]
+OK
+Time taken: 1.611 seconds
+hive> select * from logs;
+OK
+2025-05-01 11:39:00	INFO	InventoryService	Order placed
+2025-05-01 11:25:00	WARN	PaymentService	Address not verified
+2025-05-01 12:49:00	ERROR	ShippingService	Shipping error
+2025-05-01 14:33:00	WARN	ShippingService	Slow response time
+2025-05-01 10:27:00	INFO	ShippingService	Inventory updated
+2025-05-01 14:11:00	INFO	PaymentService	Order placed
+2025-05-01 12:28:00	ERROR	OrderService	Payment failed
+2025-05-01 13:54:00	ERROR	OrderService	Payment failed
+2025-05-01 14:54:00	ERROR	AuthService	Order placement failed
+2025-05-01 10:54:00	WARN	OrderService	Address not verified
+2025-05-01 14:38:00	ERROR	ShippingService	Payment failed
+2025-05-01 11:18:00	INFO	OrderService	Order placed
+2025-05-01 12:44:00	INFO	PaymentService	Order placed
+2025-05-01 12:24:00	WARN	OrderService	Low stock alert
+2025-05-01 13:41:00	WARN	ShippingService	Inventory nearing threshold
+2025-05-01 10:51:00	ERROR	ShippingService	Order placement failed
+2025-05-01 12:25:00	WARN	PaymentService	Retrying payment
+2025-05-01 11:28:00	ERROR	PaymentService	Order placement failed
+2025-05-01 13:18:00	INFO	ShippingService	Inventory updated
+2025-05-01 10:42:00	INFO	OrderService	Order placed
+2025-05-01 13:16:00	INFO	InventoryService	Order placed
+2025-05-01 14:26:00	INFO	AuthService	Shipping started
+2025-05-01 10:58:00	WARN	InventoryService	Address not verified
+2025-05-01 12:04:00	ERROR	ShippingService	User authentication failed for user 105
+2025-05-01 10:04:00	INFO	InventoryService	Order placed
+2025-05-01 11:04:00	WARN	ShippingService	Address not verified
+2025-05-01 13:56:00	ERROR	OrderService	Order placement failed
+2025-05-01 10:12:00	WARN	OrderService	Address not verified
+2025-05-01 11:26:00	WARN	OrderService	Inventory nearing threshold
+2025-05-01 11:32:00	INFO	AuthService	User login successful for user 102
+2025-05-01 13:32:00	ERROR	InventoryService	Shipping error
+2025-05-01 14:49:00	WARN	AuthService	Low stock alert
+2025-05-01 12:44:00	WARN	InventoryService	Inventory nearing threshold
+2025-05-01 10:27:00	INFO	PaymentService	Inventory updated
+2025-05-01 11:27:00	ERROR	InventoryService	Inventory sync error
+2025-05-01 11:52:00	INFO	ShippingService	Inventory updated
+2025-05-01 10:19:00	WARN	AuthService	Low stock alert
+2025-05-01 10:17:00	INFO	AuthService	User login successful for user 110
+2025-05-01 13:03:00	ERROR	ShippingService	Shipping error
+2025-05-01 10:30:00	INFO	OrderService	Payment processed
+2025-05-01 10:31:00	WARN	OrderService	Address not verified
+2025-05-01 10:28:00	ERROR	OrderService	Order placement failed
+2025-05-01 11:36:00	INFO	InventoryService	Inventory updated
+2025-05-01 10:18:00	WARN	PaymentService	Address not verified
+2025-05-01 11:40:00	INFO	PaymentService	Payment processed
+2025-05-01 11:21:00	INFO	PaymentService	User login successful for user 106
+2025-05-01 10:51:00	ERROR	InventoryService	Inventory sync error
+2025-05-01 12:41:00	ERROR	OrderService	Shipping error
+2025-05-01 12:40:00	INFO	AuthService	Shipping started
+2025-05-01 14:31:00	WARN	OrderService	Retrying payment
+2025-05-01 14:49:00	ERROR	ShippingService	User authentication failed for user 106
+2025-05-01 14:56:00	ERROR	PaymentService	Shipping error
+2025-05-01 11:31:00	ERROR	PaymentService	User authentication failed for user 104
+2025-05-01 12:31:00	ERROR	ShippingService	User authentication failed for user 101
+2025-05-01 11:33:00	WARN	AuthService	Slow response time
+2025-05-01 10:14:00	ERROR	InventoryService	Inventory sync error
+2025-05-01 12:54:00	WARN	AuthService	Low stock alert
+2025-05-01 11:08:00	INFO	PaymentService	User login successful for user 107
+2025-05-01 13:14:00	ERROR	ShippingService	User authentication failed for user 109
+2025-05-01 10:34:00	ERROR	OrderService	Payment failed
+2025-05-01 10:38:00	INFO	AuthService	Shipping started
+2025-05-01 10:25:00	INFO	PaymentService	Inventory updated
+2025-05-01 11:16:00	INFO	ShippingService	User login successful for user 100
+2025-05-01 13:18:00	INFO	ShippingService	Inventory updated
+2025-05-01 11:43:00	WARN	OrderService	Address not verified
+2025-05-01 13:15:00	ERROR	ShippingService	Payment failed
+2025-05-01 11:49:00	INFO	InventoryService	Shipping started
+2025-05-01 13:33:00	ERROR	OrderService	Inventory sync error
+2025-05-01 13:53:00	ERROR	OrderService	Payment failed
+2025-05-01 12:36:00	INFO	OrderService	Shipping started
+2025-05-01 14:59:00	ERROR	AuthService	Inventory sync error
+2025-05-01 13:28:00	ERROR	AuthService	Order placement failed
+2025-05-01 12:51:00	WARN	OrderService	Slow response time
+2025-05-01 10:14:00	INFO	ShippingService	User login successful for user 107
+2025-05-01 14:41:00	WARN	PaymentService	Inventory nearing threshold
+2025-05-01 11:13:00	ERROR	PaymentService	User authentication failed for user 109
+2025-05-01 14:13:00	INFO	OrderService	Shipping started
+2025-05-01 10:46:00	ERROR	InventoryService	Order placement failed
+2025-05-01 14:41:00	ERROR	ShippingService	Shipping error
+2025-05-01 10:04:00	WARN	AuthService	Inventory nearing threshold
+2025-05-01 12:46:00	INFO	PaymentService	Inventory updated
+2025-05-01 11:00:00	WARN	ShippingService	Low stock alert
+2025-05-01 11:38:00	ERROR	OrderService	Inventory sync error
+2025-05-01 10:11:00	WARN	InventoryService	Address not verified
+2025-05-01 11:11:00	ERROR	OrderService	User authentication failed for user 110
+2025-05-01 10:20:00	ERROR	PaymentService	User authentication failed for user 106
+2025-05-01 13:50:00	ERROR	ShippingService	Payment failed
+2025-05-01 12:55:00	ERROR	PaymentService	Order placement failed
+2025-05-01 11:13:00	ERROR	AuthService	Inventory sync error
+2025-05-01 10:54:00	WARN	OrderService	Inventory nearing threshold
+2025-05-01 14:01:00	INFO	AuthService	User login successful for user 102
+2025-05-01 10:06:00	ERROR	PaymentService	Payment failed
+2025-05-01 13:51:00	WARN	AuthService	Address not verified
+2025-05-01 14:18:00	WARN	OrderService	Retrying payment
+2025-05-01 11:01:00	INFO	AuthService	Order placed
+2025-05-01 10:35:00	ERROR	PaymentService	Inventory sync error
+2025-05-01 11:40:00	WARN	ShippingService	Slow response time
+2025-05-01 11:54:00	WARN	PaymentService	Retrying payment
+2025-05-01 11:53:00	INFO	AuthService	Order placed
+2025-05-01 13:01:00	INFO	InventoryService	Order placed
+Time taken: 0.749 seconds
+hive> describe logs;    
+OK
+log_date	string	
+log_level	string	
+service_name	string	
+message	string	
+Time taken: 0.296 seconds
+hive> create table ld (log_level STRING,service_name STRING,message STRING) partitioned by (log_date STRING) row format delimited fields terminated by ',';
+OK
+Time taken: 0.12 seconds
+hive> from logs l insert overwrite table ld partition(log_date) select l.log_date,l.log_level,l.service_name,l.message;
+FAILED: SemanticException [Error 10096]: Dynamic partition strict mode requires at least one static partition column. To turn this off set hive.exec.dynamic.partition.mode=nonstrict
+hive> create table ld (log_level STRING,service_name STRING,message STRING) partitioned by (log_date STRING) row format delimited fields terminated by CREATE EXTERNAL TABLE IF NOT EXISTS logs(log_date STRING, log_level STRING, service_name STRING,message STRING)ROW FORMAT DELIMITED FIELDS TERMINATED B                                                                                                                                                       set hive.exec.dynamic.partition.mode=nonstrict;                                                                                              
+hive> create table ld (log_level STRING,service_name STRING,message STRING) partitioned by (log_date STRING) row format delimited fields terminated by CREATE EXTERNAL TABLE IF NOT EXISTS logs(log_date STRING, log_level STRING, service_name STRING,message STRING)ROW FORMAT DELIMITED FIELDS TERMINATED B                                                                                                                                                       set hive.exec.dynamic.partition=true;                                                                               
+hive> from logs l insert overwrite table ld partition(log_date) select l.log_date,l.log_level,l.service_name,l.message;
+Total MapReduce jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_202505062227_0002, Tracking URL = http://0.0.0.0:50030/jobdetails.jsp?jobid=job_202505062227_0002
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_202505062227_0002
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2025-05-07 02:59:10,629 Stage-1 map = 0%,  reduce = 0%
+2025-05-07 02:59:18,719 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2025-05-07 02:59:19,740 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2025-05-07 02:59:20,762 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2025-05-07 02:59:21,782 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2025-05-07 02:59:22,800 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 1.23 sec
+MapReduce Total cumulative CPU time: 1 seconds 230 msec
+Ended Job = job_202505062227_0002
+Ended Job = 310450885, job is filtered out (removed at runtime).
+Ended Job = -573382821, job is filtered out (removed at runtime).
+Moving data to: hdfs://localhost.localdomain:8020/tmp/hive-cloudera/hive_2025-05-07_02-58-58_397_7051789129152915167-1/-ext-10000
+Loading data to table default.ld partition (log_date=null)
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Shipping%20error': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Shipping%20error': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Low%20stock%20alert': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Low%20stock%20alert': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20104': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20104': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20100': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20100': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20updated': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20updated': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20106': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20106': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20109': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20109': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Order%20placed': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Order%20placed': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20110': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20110': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Payment%20failed': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Payment%20failed': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20101': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20101': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Address%20not%20verified': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Address%20not%20verified': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20105': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20105': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Payment%20processed': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Payment%20processed': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Slow%20response%20time': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Slow%20response%20time': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20107': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20107': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Retrying%20payment': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Retrying%20payment': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20106': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20106': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20nearing%20threshold': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20nearing%20threshold': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Order%20placement%20failed': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Order%20placement%20failed': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20102': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20login%20successful%20for%20user%20102': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20sync%20error': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Inventory%20sync%20error': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20110': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=User%20authentication%20failed%20for%20user%20110': Permission denied
+chgrp: changing ownership of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Shipping%20started': Permission denied
+chmod: changing permissions of 'hdfs://localhost.localdomain:8020/user/hive/warehouse/ld/log_date=Shipping%20started': Permission denied
+	Loading partition {log_date=Shipping error}
+	Loading partition {log_date=Low stock alert}
+	Loading partition {log_date=User authentication failed for user 104}
+	Loading partition {log_date=User login successful for user 100}
+	Loading partition {log_date=Inventory updated}
+	Loading partition {log_date=User login successful for user 106}
+	Loading partition {log_date=User authentication failed for user 109}
+	Loading partition {log_date=Order placed}
+	Loading partition {log_date=User login successful for user 110}
+	Loading partition {log_date=Payment failed}
+	Loading partition {log_date=User authentication failed for user 101}
+	Loading partition {log_date=Address not verified}
+	Loading partition {log_date=User authentication failed for user 105}
+	Loading partition {log_date=Payment processed}
+	Loading partition {log_date=Slow response time}
+	Loading partition {log_date=User login successful for user 107}
+	Loading partition {log_date=Retrying payment}
+	Loading partition {log_date=User authentication failed for user 106}
+	Loading partition {log_date=Inventory nearing threshold}
+	Loading partition {log_date=Order placement failed}
+	Loading partition {log_date=User login successful for user 102}
+	Loading partition {log_date=Inventory sync error}
+	Loading partition {log_date=User authentication failed for user 110}
+	Loading partition {log_date=Shipping started}
+Partition default.ld{log_date=Address not verified} stats: [num_files: 1, num_rows: 0, total_size: 394, raw_data_size: 0]
+Partition default.ld{log_date=Inventory nearing threshold} stats: [num_files: 1, num_rows: 0, total_size: 236, raw_data_size: 0]
+Partition default.ld{log_date=Inventory sync error} stats: [num_files: 1, num_rows: 0, total_size: 324, raw_data_size: 0]
+Partition default.ld{log_date=Inventory updated} stats: [num_files: 1, num_rows: 0, total_size: 326, raw_data_size: 0]
+Partition default.ld{log_date=Low stock alert} stats: [num_files: 1, num_rows: 0, total_size: 190, raw_data_size: 0]
+Partition default.ld{log_date=Order placed} stats: [num_files: 1, num_rows: 0, total_size: 398, raw_data_size: 0]
+Partition default.ld{log_date=Order placement failed} stats: [num_files: 1, num_rows: 0, total_size: 321, raw_data_size: 0]
+Partition default.ld{log_date=Payment failed} stats: [num_files: 1, num_rows: 0, total_size: 323, raw_data_size: 0]
+Partition default.ld{log_date=Payment processed} stats: [num_files: 1, num_rows: 0, total_size: 78, raw_data_size: 0]
+Partition default.ld{log_date=Retrying payment} stats: [num_files: 1, num_rows: 0, total_size: 156, raw_data_size: 0]
+Partition default.ld{log_date=Shipping error} stats: [num_files: 1, num_rows: 0, total_size: 249, raw_data_size: 0]
+Partition default.ld{log_date=Shipping started} stats: [num_files: 1, num_rows: 0, total_size: 229, raw_data_size: 0]
+Partition default.ld{log_date=Slow response time} stats: [num_files: 1, num_rows: 0, total_size: 157, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 101} stats: [num_files: 1, num_rows: 0, total_size: 42, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 104} stats: [num_files: 1, num_rows: 0, total_size: 41, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 105} stats: [num_files: 1, num_rows: 0, total_size: 42, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 106} stats: [num_files: 1, num_rows: 0, total_size: 83, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 109} stats: [num_files: 1, num_rows: 0, total_size: 83, raw_data_size: 0]
+Partition default.ld{log_date=User authentication failed for user 110} stats: [num_files: 1, num_rows: 0, total_size: 39, raw_data_size: 0]
+Partition default.ld{log_date=User login successful for user 100} stats: [num_files: 1, num_rows: 0, total_size: 41, raw_data_size: 0]
+Partition default.ld{log_date=User login successful for user 102} stats: [num_files: 1, num_rows: 0, total_size: 74, raw_data_size: 0]
+Partition default.ld{log_date=User login successful for user 106} stats: [num_files: 1, num_rows: 0, total_size: 40, raw_data_size: 0]
+Partition default.ld{log_date=User login successful for user 107} stats: [num_files: 1, num_rows: 0, total_size: 81, raw_data_size: 0]
+Partition default.ld{log_date=User login successful for user 110} stats: [num_files: 1, num_rows: 0, total_size: 37, raw_data_size: 0]
+Table default.ld stats: [num_partitions: 24, num_files: 24, num_rows: 0, total_size: 3984, raw_data_size: 0]
+100 Rows loaded to ld
+MapReduce Jobs Launched: 
+Job 0: Map: 1   Cumulative CPU: 1.23 sec   HDFS Read: 6357 HDFS Write: 3984 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 230 msec
+OK
+Time taken: 34.812 seconds
+hive> 

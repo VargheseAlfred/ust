@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <style>
+        /* Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+            gap: 30px;
+        }
+
+        .profile {
+            width: 280px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile h2 {
+            margin-top: 10px;
+            color: white;
+            font-size: 22px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #ff3399, #ff9933);
+            border-radius: 30px;
+            transition: background 0.3s, transform 0.2s;
+            font-weight: bold;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a:hover {
+            background: linear-gradient(to right, #ff9933, #ff3399);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="sample.jpg" alt="Profile Picture">
+            <h2>Shah Rukh Khan</h2>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <a href="friend.html">Friends</a>
+            <a href="wishes.html">Wish</a>
+            <a href="gift.html">Gift</a>
+            <a href="imgs.html">Images</a>
+        </nav>
+    </div>
+</body>
+</html>
