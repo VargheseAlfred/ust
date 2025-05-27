@@ -1,0 +1,42 @@
+1) In which state did most fraud take place?
+
+SELECT state, COUNT(*) AS fraud_count 
+FROM transactions 
+WHERE is_fraud = 1 
+GROUP BY state 
+ORDER BY fraud_count DESC 
+LIMIT 1;
+
+2) People with which job profession got defrauded the most?
+
+SELECT profession, COUNT(*) AS fraud_count 
+FROM transactions 
+WHERE is_fraud = 1 
+GROUP BY profession 
+ORDER BY fraud_count DESC 
+LIMIT 1;
+
+3) Oldest person to get defrauded?
+
+SELECT name, age 
+FROM transactions 
+WHERE is_fraud = 1 
+ORDER BY age DESC 
+LIMIT 1;
+
+4) Youngest person to get defrauded?
+
+SELECT name, age 
+FROM transactions 
+WHERE is_fraud = 1 	
+ORDER BY age ASC 
+LIMIT 1;
+
+5) Number of fraud cases before and after 2020?
+
+SELECT 
+    CASE WHEN YEAR(transaction_date) < 2020 THEN 'Before 2020' ELSE 'After 2020' END AS period, 
+    COUNT(*) AS fraud_count 
+FROM transactions 
+WHERE is_fraud = 1 
+GROUP BY period;
